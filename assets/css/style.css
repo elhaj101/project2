@@ -20,6 +20,10 @@ html, body {
 /* Main content area */
 .main-content {
     flex: 1; /* Allows the content area to grow and fill available space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack elements vertically */
 }
 
 /* Footer styling */
@@ -27,7 +31,7 @@ html, body {
     text-align: center; /* Center text */
 }
 
-/* IDs */
+/* Background for the home page */
 #home {
     background-image: url('../images/xmas1.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */
@@ -35,9 +39,37 @@ html, body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
-#calendar {
-    background-image: url('../images/xmas2.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+/* Form styling */
+.name-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    margin-top: 20px; /* Space above the form */
+}
+
+.form-label {
+    margin-bottom: 5px; /* Space between label and input */
+    color: white; /* Change text color for visibility */
+}
+
+.form-input {
+    padding: 10px; /* Add padding for the input */
+    margin-bottom: 10px; /* Space between input and button */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    width: 200px; /* Set a fixed width for the input */
+}
+
+.form-button {
+    padding: 10px; /* Add padding for the button */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 220px; /* Set a fixed width for the button */
+}
+
+.form-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
