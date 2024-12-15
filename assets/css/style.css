@@ -1,0 +1,43 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a full height for the body and html elements */
+html, body {
+    height: 100%;
+}
+
+/* Create a flexible container */
+.container {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Allow for vertical stacking */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1; /* Allows the content area to grow and fill available space */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center; /* Center text */
+}
+
+/* IDs */
+#home {
+    background-image: url('../images/xmas1.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#calendar {
+    background-image: url('../images/xmas2.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
