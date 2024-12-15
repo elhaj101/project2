@@ -24,7 +24,43 @@ html, body {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     flex-direction: column; /* Stack elements vertically */
+
 }
+
+.form-div {
+    height: 30rem;
+    width: 80%;
+    border-color: white;
+    padding-top:10rem;
+    background-color: rgba(252, 252, 252, 0.7); /* Red with 50% transparency */
+
+
+}
+
+.p-form-div {
+    font-size: 30px;
+    margin-left:1rem;
+}
+@media (min-width: 768px)  { 
+    .p-form-div {
+        font-size: 46px;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        margin-left:2rem;
+    }
+    
+}
+@media (min-width: 1200px) {
+    .p-form-div {
+        font-size: 47px;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 15rem;
+    }
+}
+
+
+
 
 /* Footer styling */
 .footer {
@@ -48,8 +84,9 @@ html, body {
 }
 
 .form-label {
+    font-size: 22px;
     margin-bottom: 5px; /* Space between label and input */
-    color: white; /* Change text color for visibility */
+    color: rgb(22, 22, 22); /* Change text color for visibility */
 }
 
 .form-input {
@@ -61,6 +98,7 @@ html, body {
 }
 
 .form-button {
+    font-size: 17px;
     padding: 10px; /* Add padding for the button */
     background-color: #007BFF; /* Button background color */
     color: white; /* Text color */
@@ -72,4 +110,10 @@ html, body {
 
 .form-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
+}
+
+.header{
+    font-size: medium;
+    color: white;
+    margin:1rem;
 }
