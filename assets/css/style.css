@@ -10,6 +10,43 @@ html, body {
     height: 100%;
 }
 
+.footer {
+    color: white;
+    text-align: center;
+    border-top: 1px dashed #ccc; /* Top border for separation */
+    padding: 20px;
+    background-color: rgb(146, 40, 19);
+}
+
+.footer-content {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the content */
+}
+
+.social-media {
+    margin-top: 10px; /* Space above social media links */
+}
+
+.social-media a {
+    color: inherit; /* Inherit color from the parent element */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-media a:hover {
+    color: #000; /* Change color on hover */
+}
+
+.social-icon {
+    width: 30px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between icons */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
 /* Create a flexible container */
 .container {
     min-height: 100vh; /* Full viewport height */
@@ -18,16 +55,16 @@ html, body {
 }
 
 .banner {
-    position: fixed;
-    bottom: 20px;
-    right: 22px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 13px 33px;
-    border-radius: 5px;
-    z-index: 1000;
-    transition: opacity 0.5s;
-    opacity: 0;
+    position: fixed; /* Fix the position */
+    bottom: 20px; 
+    right: 22px; /* Distance from the bottom */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 13px 33px; /* Padding for the banner */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other content */
+    transition: opacity 0.5s; /* Smooth fade-in effect */
+    opacity: 0; /* Start hidden */
     width: 301px;
     height: 47px;
 }
@@ -50,8 +87,7 @@ html, body {
 /* Main content area */
 .main-content {
     flex: 1;
-    display: flex
-;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -73,17 +109,6 @@ html, body {
     margin-left: 10.5px;
 }
 
-
-
-/* Footer styling */
-.footer {
-    text-align: center;
-    border-style: dashed;
-    height: 10rem;
-    margin-top: 1rem;
-    background-color: blanchedalmond;
-}
-
 /* Background for the home page */
 #home {
     background-image: url('../images/xmas1.jpg'); /* Replace with your image path */
@@ -94,8 +119,7 @@ html, body {
 
 /* Form styling */
 .name-form {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 47px;
@@ -130,16 +154,16 @@ html, body {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-.header{
+.header {
     font-size: medium;
     color: white;
-    margin:1rem;
+    margin: 1rem;
 }
+
 .how-it-works {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
-    gap: 8rem;
+    gap: 8rem; /* Adjust gap for spacing */
     width: 100%;
     height: 76rem;
     background-color: white;
@@ -149,28 +173,11 @@ html, body {
 
 .how-it-works h2 {
     font-size: 2.2rem;
-    
     color: rgb(22, 22, 22);
 }
 
-.banner {
-    position: fixed; /* Fix the position */
-    bottom: 20px; 
-    right:20px;/* Distance from the bottom */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding for the banner */
-    border-radius: 5px; /* Rounded corners */
-    z-index: 1000; /* Ensure it appears above other content */
-    transition: opacity 0.5s; /* Smooth fade-in effect */
-    opacity: 0; /* Start hidden */
-}
-
-#fig1{    padding-top: 52px;
-}
-#fig2{    padding-top: 59px;
-}
-#fig3{    padding-top: 65px;
+#fig1, #fig2, #fig3 {
+    padding-top: 52px; /* Adjust this according to specific needs */
 }
 
 .small-img {
@@ -179,6 +186,7 @@ html, body {
     margin-left: 1rem;
     margin-bottom: -4rem;
 }
+
 .info-spans {
     display: flex; /* Use flexbox to align spans in a row */
     flex-direction: column;
@@ -192,119 +200,65 @@ html, body {
     color: rgb(22, 22, 22);
 }
 
-
+/* Media Queries */
 @media (min-width: 768px) {
-
-   
-}
-
-
-@media (min-width: 1440px) {
-   
- 
+    /* Additional styles for small devices */
 }
 
 @media (min-width: 1024px) {
-
-
-
-    
-    
     .info-spans {
-        display: flex; /* Use flexbox to align spans in a row */
-        flex-direction: row;
+        flex-direction: row; /* Change to row for larger screens */
         justify-content: center; /* Center the spans */
         gap: 1rem; /* Increased gap to maintain proportion */
     }
-   
+
     .main-content {
-        flex: 1;
-        display: flex
-    ;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 23rem;
+        padding-top: 23rem; /* Adjust padding */
     }
 
     .form-div {
-        height: 29rem;
-        width: 60%;
-        border-color: white;
-        padding-top: 8rem;
-        background-color: rgba(252, 252, 252, 0.7);
-        margin-bottom: 245px;
-        margin-top: -11rem;
+        height: 29rem; /* Adjust height */
+        margin-bottom: 245px; /* Adjust margin */
+        margin-top: -11rem; /* Adjust margin */
     }
-    
 
     .how-it-works {
-        display: flex
-;
-        flex-direction: row;
-        gap: 7rem;
-        width: 100%;
-        height: 50rem;
-        background-color: white;
-        padding: 3rem 2rem;
-        text-align: center;
-    }
-}
-
-
-@media (min-width: 1024px) {
-
-    #fig1 {
-        padding-top: 100px;
-        font-size: 30px;
+        flex-direction: row; /* Row alignment for larger screens */
+        gap: 7rem; /* Adjust gap for spacing */
+        height: 50rem; /* Adjust height */
     }
 
-    #fig2{
-        padding-top: 110px;
-        font-size: 27px;
-    }
-
-    #fig3 {
-        padding-top: 110px;
-        font-size: 28px;
-    }
+    #fig1 { padding-top: 100px; font-size: 30px; }
+    #fig2 { padding-top: 110px; font-size: 27px; }
+    #fig3 { padding-top: 110px; font-size: 28px; }
 
     .p-form-div {
-        font-size: 34px;
-        margin-left: 53px;
+        font-size: 34px; /* Adjust font size */
+        margin-left: 53px; /* Adjust margin */
     }
-   
-        .small-img {
-            width: 230px;
-            height: 233px;
-            margin-left: -3rem;
-            margin-bottom: -3rem;
-        }
+
+    .small-img {
+        width: 230px; /* Adjust size */
+        height: 233px; /* Adjust size */
+        margin-left: -3rem; /* Adjust margin */
+        margin-bottom: -3rem; /* Adjust margin */
     }
+}
 
 @media (min-width: 1440px) {
     .p-form-div {
-        font-size: 41px;
-        margin-left: 132px;
-
+        font-size: 41px; /* Adjust font size */
+        margin-left: 132px; /* Adjust margin */
     }
+
     .small-img {
-        width: 224px;
-        height: 233px;
-        margin-left: -3rem;
-        margin-bottom: -7rem;
+        width: 224px; /* Adjust size */
+        height: 233px; /* Adjust size */
+        margin-left: -3rem; /* Adjust margin */
+        margin-bottom: -7rem; /* Adjust margin */
     }
 
     .how-it-works {
-        display: flex
-    ;
-        flex-direction: row;
-        gap: 15rem;
-        width: 100%;
-        height: 50rem;
-        background-color: white;
-        padding: 3rem 2rem;
-        text-align: center;
+        gap: 15rem; /* Increase gap for spacing */
     }
 }
-

@@ -50,3 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
         banner.style.display = "none"; // Hide the banner
     });
 });
+
+document.querySelectorAll('.social-media a').forEach(link => {
+    link.addEventListener('click', () => {
+        console.log(`Navigating to: ${link.href}`);
+    });
+});
