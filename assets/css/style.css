@@ -44,8 +44,15 @@ html, body {
 
 @media (min-width: 1024px) {
     .p-form-div {
-        font-size: 36px; /* Font size for larger screens */
-        margin-left: 3rem; /* Left margin for larger screens */
+        font-size: 34px;
+        margin-left: 53px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .p-form-div {
+        font-size: 41px;
+        margin-left: 132px;
     }
 }
 
@@ -54,7 +61,11 @@ html, body {
 
 /* Footer styling */
 .footer {
-    text-align: center; /* Center text */
+    text-align: center;
+    border-style: dashed;
+    height: 10rem;
+    margin-top: 1rem;
+    background-color: blanchedalmond;
 }
 
 /* Background for the home page */
@@ -110,27 +121,85 @@ html, body {
 }
 .how-it-works {
     width: 100%; /* Full width of the screen */
-    height: 30rem; /* Fixed height for the section */
+    height: 50rem; /* Fixed height for the section */
     background-color: white; /* White background for the section */
     padding: 3rem 2rem; /* Adjusted padding for top/bottom and left/right */
-    margin: 2rem 0; /* Margin above and below the section */
     text-align: center; /* Center text inside the section */
 }
 
 .how-it-works h2 {
-    font-size: 2.2rem; /* Font size for the heading, adjusted for height */
-    margin-bottom: 1.5rem; /* Space below the heading */
-    color: rgb(22, 22, 22); /* Text color for the heading */
+    font-size: 2.2rem;
+    margin-bottom: 3.5rem;
+    color: rgb(22, 22, 22);
 }
+
+/* write media query */
+
+
+  
+
+
+
+
+
 
 .info-spans {
     display: flex; /* Use flexbox to align spans in a row */
+    flex-direction: column;
     justify-content: center; /* Center the spans */
     gap: 3rem; /* Increased gap to maintain proportion */
 }
 
 .info-spans span {
-    font-size: 1rem; /* Font size for the spans, adjusted for height */
-    color: rgb(22, 22, 22); /* Text color for the spans */
+    font-size: 1.5rem;
+    margin-top: 100px;
+    color: rgb(22, 22, 22);
 }
 
+
+
+
+@media (min-width: 1440px) {
+    .how-it-works h2 {
+    font-size: 3.2rem;
+    margin-bottom: 6.5rem;
+    color: rgb(22, 22, 22);
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-spans {
+        display: flex; /* Use flexbox to align spans in a row */
+        flex-direction: row;
+        justify-content: center; /* Center the spans */
+        gap: 8rem; /* Increased gap to maintain proportion */
+    }
+    .how-it-works {
+        width: 100%;
+        height: 44rem;
+        background-color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    .main-content {
+        flex: 1;
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 23rem;
+    }
+
+    .form-div {
+        height: 29rem;
+        width: 60%;
+        border-color: white;
+        padding-top: 8rem;
+        background-color: rgba(252, 252, 252, 0.7);
+        margin-bottom: 245px;
+        margin-top: -11rem;
+    }
+    
+}
