@@ -19,43 +19,33 @@ html, body {
 
 /* Main content area */
 .main-content {
-    flex: 1; /* Allows the content area to grow and fill available space */
+    flex: 1;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Stack elements vertically */
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
 }
 
 .form-div {
-    height: 30rem;
-    width: 80%;
+    height: 27rem;
+    width: 60%;
     border-color: white;
-    padding-top:10rem;
-    background-color: rgba(252, 252, 252, 0.7); /* Red with 50% transparency */
-
-
+    padding-top: 5rem;
+    background-color: rgba(252, 252, 252, 0.7);
+    margin-bottom: 118px;
+    margin-top: -4rem;
 }
 
 .p-form-div {
-    font-size: 30px;
-    margin-left:1rem;
+    font-size: 24px;
+    margin-left: 10.5px;
 }
-@media (min-width: 768px)  { 
+
+@media (min-width: 1024px) {
     .p-form-div {
-        font-size: 46px;
-        margin: 2rem;
-        margin-bottom: 2rem;
-        margin-left:2rem;
-    }
-    
-}
-@media (min-width: 1200px) {
-    .p-form-div {
-        font-size: 47px;
-        margin: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 15rem;
+        font-size: 36px; /* Font size for larger screens */
+        margin-left: 3rem; /* Left margin for larger screens */
     }
 }
 
@@ -77,10 +67,11 @@ html, body {
 
 /* Form styling */
 .name-form {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
-    margin-top: 20px; /* Space above the form */
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 47px;
 }
 
 .form-label {
@@ -117,3 +108,29 @@ html, body {
     color: white;
     margin:1rem;
 }
+.how-it-works {
+    width: 100%; /* Full width of the screen */
+    height: 30rem; /* Fixed height for the section */
+    background-color: white; /* White background for the section */
+    padding: 3rem 2rem; /* Adjusted padding for top/bottom and left/right */
+    margin: 2rem 0; /* Margin above and below the section */
+    text-align: center; /* Center text inside the section */
+}
+
+.how-it-works h2 {
+    font-size: 2.2rem; /* Font size for the heading, adjusted for height */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    color: rgb(22, 22, 22); /* Text color for the heading */
+}
+
+.info-spans {
+    display: flex; /* Use flexbox to align spans in a row */
+    justify-content: center; /* Center the spans */
+    gap: 3rem; /* Increased gap to maintain proportion */
+}
+
+.info-spans span {
+    font-size: 1rem; /* Font size for the spans, adjusted for height */
+    color: rgb(22, 22, 22); /* Text color for the spans */
+}
+
