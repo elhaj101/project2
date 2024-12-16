@@ -17,10 +17,41 @@ html, body {
     flex-direction: column; /* Allow for vertical stacking */
 }
 
+.banner {
+    position: fixed;
+    bottom: 20px;
+    right: 22px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 13px 33px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s;
+    opacity: 0;
+    width: 301px;
+    height: 47px;
+}
+
+.cookie-button {
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 15px 25px; /* Increased padding for buttons */
+    margin: 5px; /* Margin between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 1.2rem; /* Increased font size for buttons */
+}
+
+.cookie-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
 /* Main content area */
 .main-content {
     flex: 1;
-    display: flex;
+    display: flex
+;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -41,21 +72,6 @@ html, body {
     font-size: 24px;
     margin-left: 10.5px;
 }
-
-@media (min-width: 1024px) {
-    .p-form-div {
-        font-size: 34px;
-        margin-left: 53px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .p-form-div {
-        font-size: 41px;
-        margin-left: 132px;
-    }
-}
-
 
 
 
@@ -120,29 +136,49 @@ html, body {
     margin:1rem;
 }
 .how-it-works {
-    width: 100%; /* Full width of the screen */
-    height: 50rem; /* Fixed height for the section */
-    background-color: white; /* White background for the section */
-    padding: 3rem 2rem; /* Adjusted padding for top/bottom and left/right */
-    text-align: center; /* Center text inside the section */
+    display: flex
+;
+    flex-direction: column;
+    gap: 8rem;
+    width: 100%;
+    height: 76rem;
+    background-color: white;
+    padding: 3rem 2rem;
+    text-align: center;
 }
 
 .how-it-works h2 {
     font-size: 2.2rem;
-    margin-bottom: 3.5rem;
+    
     color: rgb(22, 22, 22);
 }
 
-/* write media query */
+.banner {
+    position: fixed; /* Fix the position */
+    bottom: 20px; 
+    right:20px;/* Distance from the bottom */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the banner */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other content */
+    transition: opacity 0.5s; /* Smooth fade-in effect */
+    opacity: 0; /* Start hidden */
+}
 
+#fig1{    padding-top: 52px;
+}
+#fig2{    padding-top: 59px;
+}
+#fig3{    padding-top: 65px;
+}
 
-  
-
-
-
-
-
-
+.small-img {
+    width: 199px;
+    height: 200px;
+    margin-left: 1rem;
+    margin-bottom: -4rem;
+}
 .info-spans {
     display: flex; /* Use flexbox to align spans in a row */
     flex-direction: column;
@@ -157,31 +193,30 @@ html, body {
 }
 
 
+@media (min-width: 768px) {
+
+   
+}
 
 
 @media (min-width: 1440px) {
-    .how-it-works h2 {
-    font-size: 3.2rem;
-    margin-bottom: 6.5rem;
-    color: rgb(22, 22, 22);
-    }
+   
+ 
 }
 
 @media (min-width: 1024px) {
+
+
+
+    
+    
     .info-spans {
         display: flex; /* Use flexbox to align spans in a row */
         flex-direction: row;
         justify-content: center; /* Center the spans */
-        gap: 8rem; /* Increased gap to maintain proportion */
+        gap: 1rem; /* Increased gap to maintain proportion */
     }
-    .how-it-works {
-        width: 100%;
-        height: 44rem;
-        background-color: white;
-        padding: 3rem 2rem;
-        text-align: center;
-    }
-
+   
     .main-content {
         flex: 1;
         display: flex
@@ -202,4 +237,74 @@ html, body {
         margin-top: -11rem;
     }
     
+
+    .how-it-works {
+        display: flex
+;
+        flex-direction: row;
+        gap: 7rem;
+        width: 100%;
+        height: 50rem;
+        background-color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
 }
+
+
+@media (min-width: 1024px) {
+
+    #fig1 {
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+    #fig2{
+        padding-top: 110px;
+        font-size: 27px;
+    }
+
+    #fig3 {
+        padding-top: 110px;
+        font-size: 28px;
+    }
+
+    .p-form-div {
+        font-size: 34px;
+        margin-left: 53px;
+    }
+   
+        .small-img {
+            width: 230px;
+            height: 233px;
+            margin-left: -3rem;
+            margin-bottom: -3rem;
+        }
+    }
+
+@media (min-width: 1440px) {
+    .p-form-div {
+        font-size: 41px;
+        margin-left: 132px;
+
+    }
+    .small-img {
+        width: 224px;
+        height: 233px;
+        margin-left: -3rem;
+        margin-bottom: -7rem;
+    }
+
+    .how-it-works {
+        display: flex
+    ;
+        flex-direction: row;
+        gap: 15rem;
+        width: 100%;
+        height: 50rem;
+        background-color: white;
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+}
+
