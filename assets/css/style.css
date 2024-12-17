@@ -174,12 +174,12 @@ html, body {
 
 .container-calendar {
     flex: 1;
-    height: 0%;
-    width: 22rem;
+    margin: 4%;
+    width: 92%;
     border-style: double;
     background-color: #0056b3;
-    margin: 20px;
 }
+
 /* Header styles */
 .header {
     font-size: medium;
@@ -269,16 +269,22 @@ html, body {
     }
 
     .how-it-works {
-        flex-direction: row; /* Row alignment for larger screens */
-        gap: 7rem; /* Adjust gap for spacing */
-        height: 50rem; /* Adjust height */
+        flex-direction: row;
+        gap: 12rem;
+        height: 50rem;
     }
 
-    #fig1 { padding-top: 100px; font-size: 30px; }
-    #fig2 { padding-top: 110px; font-size: 27px; }
-    #fig3 { padding-top: 110px; font-size: 28px; }
+
+    #fig1 { padding-top: 70px; font-size: 30px; }
+    #fig2 {
+        padding-top: 70px;
+        font-size: 27px;
+        margin-right: 41px;
+    }
+    #fig3 { padding-top: 70px; font-size: 28px; }
 
     .p-form-div {
+       
         font-size: 34px; /* Adjust font size */
         margin-left: 53px; /* Adjust margin */
     }
@@ -289,16 +295,21 @@ html, body {
         margin-left: -3rem; /* Adjust margin */
         margin-bottom: -3rem; /* Adjust margin */
     }
-}
 
+}
 @media (min-width: 1440px) {
+
+
+    #fig1 { padding-top: 100px; font-size: 35px; }
+    #fig2 { padding-top: 110px; font-size: 35px; }
+    #fig3 { padding-top: 110px; font-size: 33px; }
 
     .container-calendar {
         flex: 1;
-        width: 1313px;
+        width: 95%;
         border-style: double;
         background-color: #0056b3;
-        margin: 61px;
+        margin: 2.5%;
     }
 
     .p-form-div {
@@ -314,6 +325,11 @@ html, body {
     }
 
     .how-it-works {
-        gap: 15rem; /* Increase gap for spacing */
+        flex-direction: row;
+        gap: 20rem;
+        height: 84rem;
+        padding-left: 89px;
+        padding-top: 200px;
     }
+
 }
