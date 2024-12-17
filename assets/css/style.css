@@ -103,17 +103,17 @@ html, body {
 
 .form-div {
     height: 27rem;
-    width: 60%;
+    width: 89%;
     border-color: white;
-    padding-top: 5rem;
+    padding-top: 1rem;
     background-color: rgba(252, 252, 252, 0.7);
-    margin-bottom: 118px;
-    margin-top: -4rem;
+    margin-bottom: 131px;
+    margin-top: -6rem;
 }
 
 .p-form-div {
-    font-size: 24px;
-    margin-left: 10.5px;
+    font-size: 29px;
+    margin-left: 13px;
 }
 
 /* Background for the home page */
@@ -300,10 +300,10 @@ html, body {
         background-color: #0056b3;
         margin: 61px;
     }
-}
+
     .p-form-div {
-        font-size: 41px; /* Adjust font size */
-        margin-left: 132px; /* Adjust margin */
+        font-size: 65px;
+        margin-left: 159px;
     }
 
     .small-img {
@@ -316,3 +316,4 @@ html, body {
     .how-it-works {
         gap: 15rem; /* Increase gap for spacing */
     }
+}
