@@ -112,8 +112,8 @@ html, body {
 }
 
 .p-form-div {
-    font-size: 29px;
-    margin-left: 13px;
+    font-size: 25px;
+    margin-left: 14%;
 }
 
 /* Background for the home page */
@@ -414,7 +414,7 @@ html, body {
         width: 92%;
         margin: 6%;
     }
-}
+
 
     .p-form-div {
         font-size: 65px;
@@ -436,3 +436,4 @@ html, body {
         padding-top: 200px;
     }
 
+}
