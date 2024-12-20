@@ -57,7 +57,7 @@ html, body {
 .footer {
     color: white;
     text-align: center;
-    border-top: 1px dashed #ccc; /* Top border for separation */
+    
     padding: 20px;
     background-color: rgb(146, 40, 19); /* Dark background for footer */
 }
@@ -244,10 +244,15 @@ html, body {
     justify-content: center;
 }
 .block-content {
-    display: flex;
-    flex-direction: column; /* Content inside each block is vertical */
-    align-items: center; /* Center items horizontally */
-}
+    display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+        font-size: 48px;
+        color: white;
+        font-weight: 900;
+    }
+
 
 .long{
     flex: 0 0 calc(20% - 10px); /* Five blocks per row */
@@ -357,7 +362,7 @@ html, body {
         height: 260px;
         width: 33%;
         margin: 19px;
-        background-color: #ffffff;
+        background-color: #d14848c2;
         border: 1px solid #ccc;
         padding: 20px;
         box-sizing: border-box;
@@ -374,7 +379,7 @@ html, body {
         height: 220px;
         width: 30%;
         margin: 3px;
-        background-color: #ffffff;
+        background-color: #d14848c2;
         border: 1px solid #ccc;
         padding: 20px;
         box-sizing: border-box;
@@ -392,7 +397,7 @@ html, body {
         height: 140px;
         width: 24%;
         margin: 30px;
-        background-color: #ffffff;
+        background-color: #d14848c2;
         border: 1px solid #ccc;
         padding: 20px;
         box-sizing: border-box;

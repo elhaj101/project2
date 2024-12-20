@@ -129,3 +129,36 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+
+Working Materials:
+
+Here’s a list of numbers from 1 to 24, each assigned a random number between 1 and 24:
+
+| Number | Random Assignment |
+|--------|-------------------|
+| 1      | 7                 |
+| 2      | 14                |
+| 3      | 22                |
+| 4      | 3                 |
+| 5      | 19                |
+| 6      | 11                |
+| 7      | 1                 |
+| 8      | 16                |
+| 9      | 24                |
+| 10     | 5                 |
+| 11     | 9                 |
+| 12     | 20                |
+| 13     | 12                |
+| 14     | 6                 |
+| 15     | 21                |
+| 16     | 18                |
+| 17     | 10                |
+| 18     | 4                 |
+| 19     | 15                |
+| 20     | 8                 |
+| 21     | 2                 |
+| 22     | 23                |
+| 23     | 17                |
+| 24     | 13                |
+
