@@ -117,8 +117,10 @@ html, body {
 }
 
 /* Background for the home page */
+
+#deer-head {width:9%;}
 #home {
-    background-image: url('../images/xmas1.jpg'); /* Replace with your image path */
+    background-image: url("../images/pexels-freestockpro-3219762.jpg"); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -168,7 +170,7 @@ html, body {
     display: flex
 ;
     flex-direction: column;
-    background-image: url(../images/xmas1.jpg);
+    background-image: url("../images/pexels-brigitte-tohm-36757-263875.jpg");
     background-size: cover;
 }
 
@@ -183,7 +185,8 @@ html, body {
 .header {
     font-size: medium;
     color: white;
-    margin: 1rem;
+    width: 95%;
+    margin: 2%;
 }
 
 /* How it works section */
@@ -298,6 +301,16 @@ html, body {
         width: 720px;
         margin: 7%;
     }
+    #deer-head {
+        width: 6%;
+    }
+
+    .header {
+        font-size: medium;
+        color: white;
+        width: 55%;
+        margin: 2%;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -356,6 +369,15 @@ html, body {
 
 }
 @media (min-width: 1440px) {
+
+
+    .header {
+        font-size: medium;
+        color: white;
+        width: 36%;
+        margin: 1%;
+    }
+
 
     .long {
         flex: 0 0 calc(20% - 10px);
