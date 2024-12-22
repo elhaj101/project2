@@ -162,3 +162,13 @@ Here’s a list of numbers from 1 to 24, each assigned a random number between 1
 | 23     | 17                |
 | 24     | 13                |
 
+
+<div class="short" onclick="handelClick(event)">
+            <div class="block-content"> 7</div>
+        </div>
+
+<script> 
+        function handelClick(evt) {
+            console.log(evt)
+        }
+    </script>

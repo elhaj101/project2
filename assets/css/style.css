@@ -9,6 +9,13 @@
 html, body {
     height: 109%;
 }
+#how-it-works-message {
+    margin-top: 41%;
+    border-style: dashed;
+    padding-top: 2px;
+    font-size: 30px;
+    text-align: center;
+}
 
 /* Create a flexible container */
 .container {
@@ -170,7 +177,7 @@ html, body {
     display: flex
 ;
     flex-direction: column;
-    background-image: url("../images/pexels-brigitte-tohm-36757-263875.jpg");
+    background-image: url("../images/roberto-nickson-5PQn41LFsQk-unsplash.jpg");
     background-size: cover;
 }
 
@@ -311,9 +318,20 @@ html, body {
         width: 55%;
         margin: 2%;
     }
+
+    #how-it-works-message {
+        margin-top: 10%;
+        border-style: dashed;
+        padding-top: 2px;
+        font-size: 45px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 1024px) {
+
+
+  
 
     @media (min-width: 768px) {
         .container-calendar {
@@ -370,6 +388,7 @@ html, body {
 }
 @media (min-width: 1440px) {
 
+ 
 
     .header {
         font-size: medium;
