@@ -11,7 +11,6 @@ html, body {
 }
 #how-it-works-message {
     margin-top: 41%;
-    border-style: dashed;
     padding-top: 2px;
     font-size: 30px;
     text-align: center;
@@ -320,8 +319,7 @@ html, body {
     }
 
     #how-it-works-message {
-        margin-top: 10%;
-        border-style: dashed;
+        margin-top: 15%;
         padding-top: 2px;
         font-size: 45px;
         text-align: center;
@@ -329,6 +327,14 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+
+
+    #how-it-works-message {
+        margin-top: 5%;
+        padding-top: 2px;
+        font-size: 45px;
+        text-align: center;
+    }
 
 
   
@@ -339,8 +345,11 @@ html, body {
             width: 950px;
             margin: 7%;
         }
+
+        
     }
 
+    
     .info-spans {
         flex-direction: row; /* Change to row for larger screens */
         justify-content: center; /* Center the spans */
@@ -477,9 +486,13 @@ html, body {
     .how-it-works {
         flex-direction: row;
         gap: 20rem;
-        height: 84rem;
+        height: 62rem;
         padding-left: 89px;
         padding-top: 200px;
     }
-
+    #how-it-works-message {
+        margin-top: 17%;
+        font-size: 45px;
+        text-align: center;
+    }
 }
