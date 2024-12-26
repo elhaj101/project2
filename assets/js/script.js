@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    
-
     // Shuffle the blocksData array
     shuffleArray(blocksData);
 
@@ -21,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector('.container-calendar');
 
         blocksData.forEach((number, index) => {
-            // Determine class based on the index (you can customize this logic)
+            // Determine class based on the index
             let blockClass = 'block'; // Default class
             if (index % 3 === 0) blockClass = 'short';
             if (index % 6 === 0) blockClass = 'long';
@@ -38,7 +36,32 @@ document.addEventListener('DOMContentLoaded', function() {
             // Append content to block and block to container
             block.appendChild(blockContent);
             container.appendChild(block);
+
+            // Add click event to transform the block into a card
+            block.addEventListener('click', function() {
+                transformToCard(block);
+            });
         });
+    }
+
+    // Function to transform a block into a card
+    function transformToCard(block) {
+        const number = block.querySelector('.block-content').textContent;
+
+        // Create card element
+        const card = document.createElement('div');
+        card.className = 'block'; // Use the same class for styling
+
+        // Create card content
+        const cardContent = document.createElement('div');
+        cardContent.className = 'block-content';
+        cardContent.textContent = `Block Number: ${number}`;
+
+        // Append content to card
+        card.appendChild(cardContent);
+
+        // Replace block with card in the container
+        block.parentNode.replaceChild(card, block);
     }
 
     // Call the function to create blocks
