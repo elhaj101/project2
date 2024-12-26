@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const images = [
        'assets/images/11475871.png',
-        'assets/images/11475871.png',
+        'assets/images/brigitte2.jpg',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
        'assets/images/11475871.png',
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const quotes = [
         "jfdnvkjfnvkjfdnjkvnbdfjkbvkjdfbnjkvnbdfjbnvkjdfnv kjdfjkvbndfkjvbndfkbvfdjkbnvkjfvkjdfn",
-        "Quote for Block 2",
+        "jhvhjvhjvjhvhvhvbhjvhjbvhjbbhvhgjvhgcghvhhkbhjvhjvjhvhjbjbbjhbjk",
         "Quote for Block 3",
         "Quote for Block 4",
         "Quote for Block 5",
@@ -98,10 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Function to show the modal
     function showModal(blockNumber) {
         const content = getContent(blockNumber);
-
+    
+        // Disable body scroll
+        document.body.style.overflow = 'hidden';
+    
         // Create modal elements
         const modalOverlay = document.createElement('div');
         modalOverlay.className = 'modal-overlay';
@@ -115,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modalOverlay.style.alignItems = 'center';
         modalOverlay.style.justifyContent = 'center';
         modalOverlay.style.zIndex = '1000';
-
+    
         const modalContent = document.createElement('div');
         modalContent.className = 'modal-content';
         modalContent.style.backgroundColor = '#fff';
@@ -124,7 +126,10 @@ document.addEventListener('DOMContentLoaded', function() {
         modalContent.style.position = 'relative';
         modalContent.style.maxWidth = '600px';
         modalContent.style.width = '80%';
-
+        modalContent.style.overflowY = 'auto'; // Enable vertical scrolling
+        modalContent.style.maxHeight = '80vh'; // Limit height
+        modalContent.style.border = '2px solid white'; // Add thin white border
+    
         const closeButton = document.createElement('button');
         closeButton.textContent = 'Close';
         closeButton.style.position = 'absolute';
@@ -132,25 +137,26 @@ document.addEventListener('DOMContentLoaded', function() {
         closeButton.style.right = '10px';
         closeButton.addEventListener('click', function() {
             document.body.removeChild(modalOverlay);
+            document.body.style.overflow = ''; // Re-enable body scroll
         });
-
+    
         const modalImage = document.createElement('img');
         modalImage.src = content.image;
         modalImage.alt = `Image for Block ${blockNumber}`;
         modalImage.style.width = '100%';
         modalImage.style.borderRadius = '8px';
-
+    
         const modalQuote = document.createElement('p');
         modalQuote.textContent = content.quote;
         modalQuote.style.marginTop = '10px';
-
+    
         modalContent.appendChild(closeButton);
         modalContent.appendChild(modalImage);
         modalContent.appendChild(modalQuote);
         modalOverlay.appendChild(modalContent);
         document.body.appendChild(modalOverlay);
     }
-
+    
     // Function to apply the cracked effect
     function applyCrackedEffect(block) {
         block.classList.add('cracked'); // Add cracked class
