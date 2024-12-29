@@ -126,9 +126,11 @@ html, body {
 
 /* Background for the home page */
 
-#deer-head {width:9%;}
+#deer-head {
+    height:auto;
+    width:9%;}
 #home {
-    background-image: url("../images/pexels-freestockpro-3219762.jpg"); /* Replace with your image path */
+    background-image: url("../images/pexels-freestockpro-3219762 (1).webp"); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -178,7 +180,7 @@ html, body {
     display: flex
 ;
     flex-direction: column;
-    background-image: url("../images/roberto-nickson-5PQn41LFsQk-unsplash.jpg");
+    background-image: url("../images/calendar.webp");
     background-size: cover;
 }
 

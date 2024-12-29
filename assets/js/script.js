@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         greeting.style.color = 'white'; 
         document.querySelector('.container-calendar').insertAdjacentElement('afterbegin', greeting);
     }
-
     const blocksData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
     const images = [
@@ -47,30 +46,30 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     const quotes = [
-        "jfdnvkjfnvkjfdnjkvnbdfjkbvkjdfbnjkvnbdfjbnvkjdfnv kjdfjkvbndfkjvbndfkbvfdjkbnvkjfvkjdfn",
-        "jhvhjvhjvjhvhvhvbhjvhjbvhjbbhvhgjvhgcghvhhkbhjvhjvjhvhjbjbbjhbjk",
-        "Quote for Block 3",
-        "Quote for Block 4",
-        "Quote for Block 5",
-        "Quote for Block 6",
-        "Quote for Block 7",
-        "Quote for Block 8",
-        "Quote for Block 9",
-        "Quote for Block 10",
-        "Quote for Block 11",
-        "Quote for Block 12",
-        "Quote for Block 13",
-        "Quote for Block 14",
-        "Quote for Block 15",
-        "Quote for Block 16",
-        "Quote for Block 17",
-        "Quote for Block 18",
-        "Quote for Block 19",
-        "Quote for Block 20",
-        "Quote for Block 21",
-        "Quote for Block 22",
-        "Quote for Block 23",
-        "Quote for Block 24"
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Sponsored by",
+        "Merry Christmas!"
     ];
 
     const messages = [
@@ -229,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const header = document.querySelector('.header');
 
 header.addEventListener('mouseover', function() {
-    header.style.color = 'lightblue'; // Change text color on hover
+    header.style.color ='red'; // Change text color on hover
     header.style.cursor = 'pointer'; // Change cursor to pointer
 });
 
