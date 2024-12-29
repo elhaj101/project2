@@ -1,5 +1,29 @@
 // Block Creation Functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Function to get URL parameters
+    function getParameterByName(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Get the user's name from the URL
+    const userName = getParameterByName('name');
+
+    // Display the user's name on the calendar page
+    if (userName) {
+        const greeting = document.createElement('h2');
+        greeting.textContent = `Welcome, ${userName}! Enjoy your Advent Calendar!`;
+        greeting.style.color = 'white'; 
+        document.querySelector('.container-calendar').insertAdjacentElement('afterbegin', greeting);
+    }
+
+    const blocksData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+
+    // ... rest of your existing code ...
+    // (Keep your existing code here)
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const blocksData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
     const images = [
