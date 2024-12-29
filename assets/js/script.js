@@ -19,38 +19,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const blocksData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
-    // ... rest of your existing code ...
-    // (Keep your existing code here)
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const blocksData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
-
     const images = [
-       'assets/images/11475871.png',
+        'assets/images/11475871.png',
         'assets/images/brigitte2.jpg',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
-       'assets/images/11475871.png',
-       'assets/images/11475871.png',
-        'assets/images/11475871.png',
-        'assets/images/11475871.png',
-       'assets/images/11475871.png',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
-       'assets/images/11475871.png',
-        'assets/images/11475871.png',
-       'assets/images/11475871.png',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
         'assets/images/11475871.png',
-       'assets/images/11475871.png',
-       'assets/images/11475871.png',
         'assets/images/11475871.png',
-       'assets/images/11475871.png'
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png',
+        'assets/images/11475871.png'
     ];
 
     const quotes = [
@@ -78,6 +71,34 @@ document.addEventListener('DOMContentLoaded', function() {
         "Quote for Block 22",
         "Quote for Block 23",
         "Quote for Block 24"
+    ];
+
+    const messages = [
+        "Oh wow, {name}! You won a coupon!",
+        "Congratulations, {name}! You found a surprise!",
+        "Great job, {name}! Enjoy your special gift!",
+        "Hooray, {name}! You've unlocked a new feature!",
+        "Awesome, {name}! You get an extra treat!",
+        "Way to go, {name}! You're a star!",
+        "Fantastic, {name}! Here's a bonus for you!",
+        "Cheers, {name}! You’ve won a mystery prize!",
+        "Yay, {name}! Celebrate your win!",
+        "Good news, {name}! You've earned a special reward!",
+        "Wow, {name}! A delightful surprise awaits you!",
+        "Keep it up, {name}! More rewards are on the way!",
+        "Amazing, {name}! You've discovered something great!",
+        "Woohoo, {name}! Enjoy your exclusive offer!",
+        "Bravo, {name}! You’re doing fantastic!",
+        "Look at you, {name}! Winning all the way!",
+        "Well done, {name}! Here's something just for you!",
+        "Exciting news, {name}! A surprise is here!",
+        "Yippee, {name}! You've hit the jackpot!",
+        "Surprise, {name}! You are the lucky one today!",
+        "Nice work, {name}! More surprises await!",
+        "Fantastic find, {name}! Enjoy your coupon!",
+        "You did it, {name}! Here's a special gift!",
+        "Incredible, {name}! You've won a treat!",
+        "Lucky you, {name}! A special surprise is yours!"
     ];
 
     function getContent(blockNumber) {
@@ -124,10 +145,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showModal(blockNumber) {
         const content = getContent(blockNumber);
-    
+        
+        // Randomly select a message and replace {name} with the user's name
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)].replace('{name}', userName);
+
         // Disable body scroll
         document.body.style.overflow = 'hidden';
-    
+
         // Create modal elements
         const modalOverlay = document.createElement('div');
         modalOverlay.className = 'modal-overlay';
@@ -141,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modalOverlay.style.alignItems = 'center';
         modalOverlay.style.justifyContent = 'center';
         modalOverlay.style.zIndex = '1000';
-    
+
         const modalContent = document.createElement('div');
         modalContent.className = 'modal-content';
         modalContent.style.backgroundColor = '#fff';
@@ -153,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modalContent.style.overflowY = 'auto'; // Enable vertical scrolling
         modalContent.style.maxHeight = '80vh'; // Limit height
         modalContent.style.border = '2px solid white'; // Add thin white border
-    
+
         const closeButton = document.createElement('button');
         closeButton.textContent = 'Close';
         closeButton.style.position = 'absolute';
@@ -163,24 +187,29 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.removeChild(modalOverlay);
             document.body.style.overflow = ''; // Re-enable body scroll
         });
-    
+
         const modalImage = document.createElement('img');
         modalImage.src = content.image;
         modalImage.alt = `Image for Block ${blockNumber}`;
         modalImage.style.width = '100%';
         modalImage.style.borderRadius = '8px';
-    
+
         const modalQuote = document.createElement('p');
         modalQuote.textContent = content.quote;
         modalQuote.style.marginTop = '10px';
-    
+
+        const modalMessage = document.createElement('p'); // Create a new paragraph for the random message
+        modalMessage.textContent = randomMessage; // Set the personalized random message
+        modalMessage.style.marginTop = '10px'; // Add some space
+
         modalContent.appendChild(closeButton);
         modalContent.appendChild(modalImage);
         modalContent.appendChild(modalQuote);
+        modalContent.appendChild(modalMessage); // Append the personalized message
         modalOverlay.appendChild(modalContent);
         document.body.appendChild(modalOverlay);
     }
-    
+
     // Function to apply the cracked effect
     function applyCrackedEffect(block) {
         block.classList.add('cracked'); // Add cracked class
@@ -211,9 +240,6 @@ header.addEventListener('mouseout', function() {
 header.addEventListener('click', function() {
     window.location.href = 'index.html'; // Redirect to index.html
 });
-
-
-
 
 // Handle form submission
 document.getElementById('nameForm').addEventListener('submit', function(event) {
