@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
         closeButton.textContent = 'Close';
         closeButton.style.position = 'absolute';
         closeButton.style.top = '10px';
-        closeButton.style.right = '10px';
+        closeButton.style.right = '15px';
         closeButton.addEventListener('click', function() {
             document.body.removeChild(modalOverlay);
             document.body.style.overflow = ''; // Re-enable body scroll

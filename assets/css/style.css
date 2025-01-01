@@ -126,9 +126,7 @@ html, body {
 
 /* Background for the home page */
 
-#deer-head {
-    height:auto;
-    width:9%;}
+
 #home {
     background-image: url("../images/pexels-freestockpro-3219762 (1).webp"); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire background */

@@ -14,19 +14,20 @@ To do list :
 - make sure the 24 pictures are compressed and scaled (done)
 - come up with 24 quotes for reward system , mention name of user (done)
 - edit javascript to include name of user submitted in form in the quotes in next page (done)
-- style the close button in the cards.
-- increase font-size of quotes.
-- check if you need an about us page.
-- choose a clear clear for hover-over on logo ( maybe red )
--  explore possibility and time needed to create  a message pop up in calendar page saying "Hey user" using javascript
-- scale all images 
-- check for better type size (slack) WebP instead of JPEG or PNG for your images.?
-- reduce unused Javascript
+- choose a clear clear for hover-over on logo ( maybe red ) (done)
+-  explore possibility and time needed to create  a message pop up in calendar page saying "Hey user" using javascript(done)
+- scale all images (done)
+- scale all images (done)
+- check for better type size (slack) WebP instead of JPEG or PNG for your images.?(done)
+- reduce unused Javascript(done)
+
 - Serve static assets with an efficient cache policy 
 - Deer head needs height and width.
 - remove unused css
 - minimize main thread work for Js.
 - add a favicon
+- check if you need an about us page.
+
 
 How to reduce payload size
 Aim to keep your total byte size below 1,600 KiB. This target is based on the amount of data that can be theoretically downloaded on a 3G connection while still achieving a Time to Interactive of 10 seconds or less.
