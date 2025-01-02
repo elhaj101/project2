@@ -119,6 +119,7 @@ The target audience includes families and individuals looking to enhance their h
 ## Credits
 All media files except images in calendar were sourced from [pexels.com]. ( Free License )
 Favicon was sourced from https://icons8.com/icon/AG8DdjXoHEBV/reindeer [Icons8.com]. ( Free License )
+Figma.com (wireframes)
 
 
 ## Deployment Instructions
@@ -128,28 +129,28 @@ Favicon was sourced from https://icons8.com/icon/AG8DdjXoHEBV/reindeer [Icons8.c
    - Go to the repository settings, find the Pages section, and select the source for deployment.
    - Access your deployed site at `https://yourusername.github.io/Deer-Advent-Calendar/`.
 
-## References
-1. [Amazon Coupon Rule]
-2. [Free Starbucks Coffee]
-3. [Cancel Target RedCard]
-4. [YouTube Video]
-5. [Best Buy Coupons]
-6. [Apple Gift Card at Kaufland]
-7. [Apple iTunes Gift Card]
-8. [Twitter Status]
-9. [IG Way]
-10. [eBay Coupons]
-11. [Home Depot Coupons]
-12. [Ebb Coupons]
-13. [Ulta Beauty Coupon]
-14. [Dunkin’ Coupons]
-15. [Chipotle Coupon]
-16. [Airbnb Gift Card]
-17. [Spotify Coupon]
-18. [Five Guys Coupons]
-19. [KFC We Love Chicken]
-20. [Kohl's Coupons]
-21. [CVS Pharmacy Coupons]
-22. [Pinterest Steve on Watch]
-23. [Nestle Coupons]
-24. [Gift Voucher]
+## References (links for cards)
+1. [Amazon Coupon Rule](https://retail-news.de/amazon-neue-coupon-regel/)
+2. [Free Starbucks Coffee](https://www.usatoday.com/story/money/food/2019/12/26/free-starbucks-coffee-how-get-free-drinks-through-end-2019/2743364001/)
+3. [Cancel Target RedCard](https://cancelhow.com/cancel-target-redcard/)
+4. [YouTube Video](https://www.youtube.com/watch?v=-0wpgzC7WC8)
+5. [Best Buy Coupons](https://www.tomshardware.com/coupons/bestbuy.com)
+6. [Apple Gift Card at Kaufland](https://www.appgefahren.de/apple-gift-card-bei-kaufland-kaufen-bis-zu-20-prozent-als-coupon-zurueck-335916.html)
+7. [Apple iTunes Gift Card](https://caspergadgets.com/product/apple-itunes-gift-card-us-10/)
+8. [Twitter Status](https://twitter.com/rematch_net/status/1736141197528162498)
+9. [IG Way](https://www.ig-way.com/?i=469303314)
+10. [eBay Coupons](https://www.ebay.de/b/Coupons-Rossmann/55389/bn_7005337270)
+11. [Home Depot Coupons](https://lhdcoupons.com/product/15-off-home-depot-in-store-only/)
+12. [Ebb Coupons](https://www.ebb.rs/?e=864491216)
+13. [Ulta Beauty Coupon](https://deal.town/ulta-beauty/your-20-off-coupon-includes-prestige-and-fragrance-PKCHK33UF4)
+14. [Dunkin’ Coupons](https://www.iamstudent.de/dunkin-gutscheine)
+15. [Chipotle Coupon](https://hip2save.com/2015/07/24/hot-chipotle-buy-1-get-1-free-entree-mobile-coupon-up-to-a-10-value/)
+16. [Airbnb Gift Card](https://www.paypal.com/de/gifts/marken/airbnb)
+17. [Spotify Coupon](https://www.spotifyinfo.app/how-to-earn-spotify-gift-cards/)
+18. [Five Guys Coupons](https://fiveguys.de/gutscheine/)
+19. [KFC We Love Chicken](https://welovechicken.caterkfc.com/)
+20. [Kohl's Coupons](https://www.wral.com/story/kohls-30-off-coupon-10-kohls-cash-10-coupons-for-womens-mens-kids-clothing/19010759/)
+21. [CVS Pharmacy Coupons](https://www.chegg.com/homework-help/questions-and-answers/analysts-pharmacy-chain-cvs-trying-understand-whether-coupons-work-purpose-increasing-sale-q110320148)
+22. [Pinterest Steve on Watch](https://uk.pinterest.com/pin/steve-on-watch--105482816249008825/)
+23. [Nestle Coupons](https://www.websaver.ca/en_ca/coupons/3700/nestle-on-any-one-1-package-of-nestl-and-eacute-sup-and-reg-sup-minis-25-count)
+24. [Gift Voucher](https://shop.mbwaverley.com.au/product/gift-voucher/)
