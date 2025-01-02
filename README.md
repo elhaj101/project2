@@ -117,7 +117,9 @@ The target audience includes families and individuals looking to enhance their h
 | Inconsistent font sizes across pages. | Standardized font sizes in CSS. | ![Bug Screenshot 4](placeholder-for-bug4.png) |
 
 ## Credits
-All media files were sourced from [pexels.com].
+All media files except images in calendar were sourced from [pexels.com]. ( Free License )
+Favicon was sourced from https://icons8.com/icon/AG8DdjXoHEBV/reindeer [Icons8.com]. ( Free License )
+
 
 ## Deployment Instructions
 1. **Create a GitHub Repository**
