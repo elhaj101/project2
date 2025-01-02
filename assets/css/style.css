@@ -299,6 +299,11 @@ html, body {
 
 }
 
+#deer-head{
+    height:auto;
+    width:15%;
+}
+
 
 
 /* Media Queries */
