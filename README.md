@@ -47,10 +47,20 @@ The target audience includes families and individuals looking to enhance their h
 - CSS3
 - JavaScript
 
+## Mockups
+
+### Laptop
+![Laptop Mockup](path/to/laptop-mockup.png)
+
+### Tablet
+![Tablet Mockup](path/to/tablet-mockup.png)
+
+### Phone
+![Phone Mockup](path/to/phone-mockup.png)
 
 ## Wireframes
-![Wireframe Screenshot 1](placeholder-for-wireframe1.png)
-![Wireframe Screenshot 2](placeholder-for-wireframe2.png)
+![Wireframe 2](assets/images/wireframe2.png)
+![Wireframe 1](assets/images/wireframe1.png)
 
 ## Pages Overview
 ### 1. Index
@@ -154,3 +164,21 @@ Figma.com (wireframes)
 22. [Pinterest Steve on Watch](https://uk.pinterest.com/pin/steve-on-watch--105482816249008825/)
 23. [Nestle Coupons](https://www.websaver.ca/en_ca/coupons/3700/nestle-on-any-one-1-package-of-nestl-and-eacute-sup-and-reg-sup-minis-25-count)
 24. [Gift Voucher](https://shop.mbwaverley.com.au/product/gift-voucher/)
+
+
+
+
+
+
+to do list
+
+- add a disclaimer done
+- edit quotes to Not sponsored by done
+- add screenshots 
+- perform validation for html css javascript Jshint W3C Jigsaw
+- try to fix errors
+- Attribute all code from external sources to its original source via comments above the code and (for larger dependencies) in the README.
+- Write code that intelligently handles empty or invalid input data.
+- Document any bugs found and their fixes and explanation of any bugs that are left unfixed.
+- say in the read.me that i dont want to prepopulate the form after its used
+
