@@ -110,16 +110,13 @@ The target audience includes families and individuals looking to enhance their h
 - Impressum: A statement that the site is developed by Ali.
 - Social media links to platforms like Facebook, Twitter, Instagram, and LinkedIn, with icons for each.
 
-![Footer Screenshot](placeholder-for-footer.png)
+![Footer Screenshot](assets/images/footer.png)
 
 ## Testing
 
 ### Lighthouse Test
-![Lighthouse Test Screenshot 1](placeholder-for-lighthouse-test1.png)
-![Lighthouse Test Screenshot 2](placeholder-for-lighthouse-test2.png)
-![Lighthouse Test Screenshot 3](placeholder-for-lighthouse-test3.png)
-![Lighthouse Test Screenshot 4](placeholder-for-lighthouse-test4.png)
-![Lighthouse Test Screenshot 5](placeholder-for-lighthouse-test5.png)
+![Lighthouse Test Screenshot 1](assets/images/lighthouse1.png)
+![Lighthouse Test Screenshot 2](assets/images/lighthouse2.png)
 
 ### Validator Checks
 ![Validator Check Screenshot 1](placeholder-for-validator-check1.png)
