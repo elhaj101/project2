@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Mockups](#mockups)
 - [Wireframes](#wireframes)
 - [Pages Overview](#pages-overview)
   - [1. Index](#1-index)
@@ -25,7 +26,7 @@ The Deer Advent Calendar is a festive website designed to celebrate the holiday 
 - **Authenticity:** Everything is designed to look as authentic as possible, except for the coupon redeeming method to avoid legal violations. As a result, no effort was made to create a way to redeem the gifts or even imitate one.
 - **Text on Cards:** 
   - Each card displays two lines of text when clicked:
-    - The first line says "Sponsored by 'X'." This line is special because it gives the developer space to convey specific information related to the card's content, as it does not change upon refresh and travels with the card's content.
+    - The first line says "NOT Sponsored by 'X'." This line is special because it gives the developer space to convey specific information related to the card's content, as it does not change upon refresh and travels with the card's content.
     - The second line features a randomly generated congratulatory message that mentions the user's name for a more personalized touch.
 - **Calendar Interface:** 
   - The calendar page includes 24 cards colored red.
@@ -50,13 +51,13 @@ The target audience includes families and individuals looking to enhance their h
 ## Mockups
 
 ### Laptop
-![Laptop Mockup](path/to/laptop-mockup.png)
+![Laptop Mockup](assets/images/laptop.png)
 
 ### Tablet
-![Tablet Mockup](path/to/tablet-mockup.png)
+![Tablet Mockup](assets/images/tablet.png)
 
 ### Phone
-![Phone Mockup](path/to/phone-mockup.png)
+![Phone Mockup](assets/images/phone.png)
 
 ## Wireframes
 ![Wireframe 2](assets/images/wireframe2.png)
@@ -73,7 +74,10 @@ The target audience includes families and individuals looking to enhance their h
 - A form asking for the user's name.
 - A "How it works" section with images and descriptions.
   
-![Index Page Screenshot](placeholder-for-index-page.png)
+![Index Page Screenshot](assets/images/index1.png)
+![Index Page Screenshot](assets/images/index2.png)
+![Index Page Screenshot](assets/images/index3.png)
+![Index Page Screenshot](assets/images/index4.png)
 
 ### 2. Calendar
 **Description:** This page presents the interactive advent calendar, allowing users to open daily doors to reveal surprises and festive content.
@@ -84,7 +88,10 @@ The target audience includes families and individuals looking to enhance their h
 - A dynamic display of blocks representing each day leading up to Christmas.
 - Personalized messages and images revealed upon clicking each block.
 
-![Calendar Page Screenshot](placeholder-for-calendar-page.png)
+![Calendar Page Screenshot](assets/images/calendar1.webp)
+![Calendar Page Screenshot](assets/images/calendar2.webp)
+![Calendar Page Screenshot](assets/images/calendar3.webp)
+![Calendar Page Screenshot](assets/images/calendar4.png)
 
 ## Features
 - **Dynamic User Greeting:** Displays a personalized welcome message with the user's name on the calendar page.
